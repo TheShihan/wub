@@ -1,0 +1,215 @@
+/* 
+CSS File for WuB
+Autor: Patric Schielke
+URI: http://www.shihan-online.ch
+*/
+/* Elements */
+
+body {
+	margin: 0 auto; 
+	padding: 0;
+	background-color: #FFF;
+	font-family: Verdana, Tahoma, Arial, Serif;
+	font-size: 0.9em;	
+	line-height: 1.5em;
+	color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family:Georgia, Tahoma, Verdana, Arial, Serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #333;	
+}
+p, blockquote {
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom:0.5em;	
+}
+p 
+{
+	line-height:1.8em;
+}
+table
+{
+	border: #FFF 0px solid;
+	border-collapse: separate;
+    border-spacing: 4px 4px;
+	padding: 0px;
+	margin: 0 auto;
+}
+td, th
+{
+	background-color: #cdf0f0;
+	border: #CCC 1px solid;
+	padding: 2px;
+}
+td:hover
+{
+	background-color: #b6d8d8;
+}
+th
+{
+	font-weight: bold;
+}
+a:link, a:visited {
+	color: #579;
+	text-decoration:none;
+	border-bottom:#c96 1px  dotted;
+}
+a:hover,a:active 
+{
+	color:#960;
+	text-decoration:none;
+	border-bottom:#699 1px solid;
+}
+
+/* Form elements */
+input
+{
+	border: #00f4f4 2px solid;
+	background-color: #fff;
+	font:1em Verdana, Arial, Serif;
+	padding:2px;
+}
+input[type=submit] 
+{
+	font-weight: bold;
+}
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus
+{
+	color: #fff;
+	background-color: #00d5d5;
+}
+textarea
+{
+	/*width: 90%;*/
+	padding:5px;
+	/*height: 20em;*/
+	background-color: #fff;
+	font:1em Verdana, Arial, Serif;
+}
+input[type=text]:focus, textarea:focus, input[type=password]:focus
+{
+	background-color: #fff;
+	border: #f00 2px solid;
+}
+
+/* Custom elements */
+#header
+{
+	margin: 70px auto 0;
+	height: 80px;
+	width: 500px;
+}
+#footer
+{
+	margin: 0 auto;
+	height: 80px;
+	width: 500px;
+	text-align: center;
+	font-size: 0.8em;
+}
+#adminlogon 
+{
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #DFF;
+	min-height: 150px;
+	width: 500px;
+	border: #CCC 1px solid;
+}
+#adminmenu
+{
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #DFF;
+	min-height: 20px;
+	width: 800px;
+	border: #CCC 1px solid;
+	text-align: center;
+	vertical-align: middle;
+}
+#usermenu
+{
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #DFF;
+	min-height: 20px;
+	width: 400px;
+	border: #CCC 1px solid;
+	text-align: center;
+	vertical-align: middle;
+}
+.right
+{
+	text-align: right;
+}
+.left
+{
+	text-align: left;
+}
+.centered
+{
+	text-align: center;
+}
+.block
+{
+	text-align: justify;
+}
+.infomessage
+{
+	color: #F00;
+	font-weight: bolder;
+	text-align: center;	
+}
+.important
+{
+	text-align: center;
+	font-weight: bolder;
+}
+div.label
+{
+	float: left;
+	clear: left;
+	background-color: transparent;
+	font-weight: bold;
+	width: 15em;
+	text-align: left;
+}
+div.errors
+{
+	color: #F00;
+	font-weight: bolder;
+	text-align: left;
+}
+div.cell
+{
+	background-color: #cdf0f0;
+	border: #CCC 1px solid;
+	padding: 2px;
+	margin: 2px;
+	width: 350px;
+	min-width: 310px;
+	max-width: 310px;
+}
+div.flLeft
+{
+	float: left;
+}
+div.flRight
+{
+	float: right;
+}
+div.stdContainer
+{
+	margin: 20px auto 0;
+	background-color: #DFF;
+	padding: 20px;
+	border: #CCC 1px solid;
+	min-height: 20px;
+	width: 730px;
+	text-align: center;
+	vertical-align: middle;
+}

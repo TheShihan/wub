@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/init.do" location="-510,195" dimension="197,88" />
+  <StrutsActivity path="/checkAdminLogon.do" location="-150,30" dimension="268,88" />
+  <StrutsActivity path="/logOut.do" location="-510,15" dimension="150,100" />
+  <StrutsActivity path="/changePassword.do" location="195,30" dimension="151,91" />
+  <StrutsActivity path="/openChangePassword.do" location="405,345" dimension="155,88" />
+  <StrutsActivity path="/openStatistics.do" location="405,1440" dimension="151,88" />
+  <StrutsActivity path="/openAppraisalManager.do" location="0,480" dimension="166,106" />
+  <StrutsActivity path="/adminList.do" location="600,1050" dimension="151,91" />
+  <StrutsActivity path="/administratorEdit.do" location="870,1050" dimension="263,88" />
+  <StrutsActivity path="/openAdminMainMenu.do" location="-135,345" dimension="344,88" />
+  <StrutsActivity path="/textElementList.do" location="-480,675" dimension="257,88" />
+  <StrutsActivity path="/textElementEdit.do" location="-480,840" dimension="259,88" />
+  <StrutsActivity path="/subjectList.do" location="-480,975" dimension="241,88" />
+  <StrutsActivity path="/subjectEdit.do" location="-480,1110" dimension="241,88" />
+  <StrutsActivity path="/userList.do" location="-480,1260" dimension="241,88" />
+  <StrutsActivity path="/userEdit.do" location="-480,1395" dimension="241,88" />
+  <StrutsActivity path="/openAppraisalManagerCore.do" location="0,1380" dimension="213,88" />
+  <StrutsActivity path="/appraisalCoreBasicList.do" location="-480,1515" dimension="241,88" />
+  <StrutsActivity path="/appraisalCoreBasicEdit.do" location="-480,1650" dimension="241,88" />
+  <StrutsActivity path="/appraisalClassList.do" location="-480,1815" dimension="241,88" />
+  <StrutsActivity path="/classEdit.do" location="-480,1965" dimension="224,88" />
+  <StrutsActivity path="/settingsManager.do" location="420,885" dimension="256,88" />
+  <StrutsActivity path="/openSettings.do" location="420,630" dimension="246,88" />
+  <StrutsActivity path="/classSend.do" location="-90,1965" dimension="230,88" />
+  <StrutsActivity path="/userLogon.do" location="-195,2760" dimension="232,88" />
+  <StrutsActivity path="/openUserLogon.do" location="-495,2595" dimension="258,88" />
+  <StrutsActivity path="/userPrepareAppraisal.do" location="-495,3150" dimension="285,88" />
+  <StrutsActivity path="/logOutUser.do" location="-795,2460" dimension="238,88" />
+  <StrutsActivity path="/userSaveAppraisal.do" location="165,3150" dimension="271,88" />
+  <StrutsActivity path="/prepareAppraisalList.do" location="-255,2925" dimension="279,88" />
+  <StrutsActivity path="/statisticSelection.do" location="675,1590" dimension="262,88" />
+  <StrutsActivity path="start;6" location="-795,165" dimension="166,100" />
+  <StrutsActivity path="doLogout;6" location="-795,15" dimension="166,100" />
+  <StrutsActivity path="startUser;6" location="-510,2325" dimension="181,75" />
+  <StrutsActivity path="doUserLogout;6" location="-795,2325" dimension="113,75" />
+  <StrutsActivity path="adminPermissionMissing;6" location="-795,300" dimension="166,75" />
+  <StrutsActivity path="page.adminlogon" location="-180,210" dimension="111,49" />
+  <StrutsActivity path="page.adminlogonFailure" location="-60,270" dimension="143,49" />
+  <StrutsActivity path="page.changePasswordSuccess" location="150,165" dimension="181,49" />
+  <StrutsActivity path="page.changePasswordFailure" location="255,255" dimension="181,49" />
+  <StrutsActivity path="page.changepassword" location="495,150" dimension="181,49" />
+  <StrutsActivity path="page.statistics" location="405,1605" dimension="151,49" />
+  <StrutsActivity path="page.appraisalmain" location="-150,660" dimension="122,49" />
+  <StrutsActivity path="page.adminmanager" location="615,1245" dimension="127,49" />
+  <StrutsActivity path="page.adminEditAdmin" location="810,1245" dimension="147,49" />
+  <StrutsActivity path="page.adminAddAdmin" location="1035,1245" dimension="151,49" />
+  <StrutsActivity path="page.adminmain" location="225,660" dimension="107,49" />
+  <StrutsActivity path="page.appraisalTextElementManager" location="-795,675" dimension="202,49" />
+  <StrutsActivity path="page.appraisalEditTextElement" location="-795,885" dimension="178,49" />
+  <StrutsActivity path="page.appraisalAddTextElement" location="-795,810" dimension="179,49" />
+  <StrutsActivity path="page.appraisalSubjectManager" location="-795,975" dimension="178,49" />
+  <StrutsActivity path="page.appraisalEditSubject" location="-795,1155" dimension="154,49" />
+  <StrutsActivity path="page.appraisalAddSubject" location="-795,1095" dimension="155,49" />
+  <StrutsActivity path="page.appraisalUserManager" location="-795,1260" dimension="164,49" />
+  <StrutsActivity path="page.appraisalEditUser" location="-795,1440" dimension="140,49" />
+  <StrutsActivity path="page.appraisalAddUser" location="-795,1365" dimension="141,49" />
+  <StrutsActivity path="page.appraisalCore" location="60,1530" dimension="123,49" />
+  <StrutsActivity path="page.appraisalCoreBasicManager" location="-795,1515" dimension="189,49" />
+  <StrutsActivity path="page.appraisalCoreEditBasic" location="-795,1695" dimension="165,49" />
+  <StrutsActivity path="page.appraisalCoreAddBasic" location="-795,1620" dimension="166,49" />
+  <StrutsActivity path="page.appraisalClassManager" location="-795,1815" dimension="167,49" />
+  <StrutsActivity path="page.appraisalClassEditClass" location="-795,1950" dimension="168,49" />
+  <StrutsActivity path="page.appraisalClassAddClass" location="-795,2025" dimension="169,49" />
+  <StrutsActivity path="page.settings" location="570,765" dimension="121,49" />
+  <StrutsActivity path="page.appraisalClassSendClass" location="75,1875" dimension="174,49" />
+  <StrutsActivity path="page.appraisalClassSendClassSuccess" location="315,2010" dimension="212,49" />
+  <StrutsActivity path="page.appraisalClassSendClassFailure" location="315,1950" dimension="206,49" />
+  <StrutsActivity path="page.userNoValidLogin" location="-120,2625" dimension="138,49" />
+  <StrutsActivity path="page.userLogon" location="135,2415" dimension="107,49" />
+  <StrutsActivity path="page.userAppraisal" location="-60,3165" dimension="122,49" />
+  <StrutsActivity path="page.userAppraisalList" location="-435,3030" dimension="138,49" />
+  <StrutsActivity path="page.userAppraisalSaveFailure" location="165,2925" dimension="178,49" />
+  <StrutsActivity path="page.userAppraisalSaveSuccess" location="135,2850" dimension="184,49" />
+  <StrutsActivity path="page.userNoAppraisals" location="-720,2790" dimension="140,49" />
+  <StrutsActivity path="page.statisticsClass" location="1110,1605" dimension="136,49" />
+  <StrutsActivity path="page.noAdminPermission" location="-435,315" dimension="148,49" />
+  <StrutsTransition id="/checkAdminLogon.do,success,/openAdminMainMenu.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="98,118" />
+      <AbsolutePoint location="98,345" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openSettings.do,toSettings,page.settings,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="585,718" />
+      <AbsolutePoint location="585,765" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/textElementEdit.do,showEdit,page.appraisalEditTextElement,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,900" />
+      <AbsolutePoint location="-617,900" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/appraisalCoreBasicList.do,showList,page.appraisalCoreBasicManager,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1549" />
+      <AbsolutePoint location="-606,1549" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openAppraisalManagerCore.do,toAppraisalCore,page.appraisalCore,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="106,1468" />
+      <AbsolutePoint location="106,1530" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openAppraisalManager.do,toAppraisalMain,page.appraisalmain,1" routingType="1">
+    <Bendpoints>
+      <Point rDim1="-38,127" rDim2="134,-24" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userSaveAppraisal.do,showSuccess,page.userAppraisalSaveSuccess,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="421,3150" />
+      <AbsolutePoint location="421,2874" />
+      <AbsolutePoint location="319,2874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/textElementEdit.do,showAdd,page.appraisalAddTextElement,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,844" />
+      <AbsolutePoint location="-616,844" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.userAppraisalList,null,/userPrepareAppraisal.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-366,3079" />
+      <AbsolutePoint location="-366,3150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openUserLogon.do,relogin,/userLogon.do,1" routingType="1">
+    <Bendpoints>
+      <Point rDim1="351,61" rDim2="-341,61" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/statisticSelection.do,showStatisticPerClass,page.statisticsClass,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="937,1634" />
+      <AbsolutePoint location="1110,1634" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userSaveAppraisal.do,showFailure,page.userAppraisalSaveFailure,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="300,3150" />
+      <AbsolutePoint location="300,2974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/settingsManager.do,refresh,/openSettings.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="518,885" />
+      <AbsolutePoint location="518,718" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/textElementEdit.do,showList,/textElementList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-350,840" />
+      <AbsolutePoint location="-350,763" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/classEdit.do,showList,/appraisalClassList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-368,1965" />
+      <AbsolutePoint location="-368,1903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/appraisalCoreBasicEdit.do,showAdd,page.appraisalCoreAddBasic,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1654" />
+      <AbsolutePoint location="-629,1654" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="adminPermissionMissing;6,null,page.noAdminPermission,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-629,337" />
+      <AbsolutePoint location="-435,337" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/init.do,relogin,/checkAdminLogon.do,1" routingType="1">
+    <Bendpoints>
+      <Point rDim1="322,-149" rDim2="-374,16" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userEdit.do,showAdd,page.appraisalAddUser,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1399" />
+      <AbsolutePoint location="-654,1399" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/appraisalCoreBasicEdit.do,showEdit,page.appraisalCoreEditBasic,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1710" />
+      <AbsolutePoint location="-630,1710" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/prepareAppraisalList.do,noAppraisals,page.userNoAppraisals,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-255,2939" />
+      <AbsolutePoint location="-650,2939" />
+      <AbsolutePoint location="-650,2839" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/textElementList.do,showList,page.appraisalTextElementManager,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,709" />
+      <AbsolutePoint location="-593,709" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="doUserLogout;6,null,/logOutUser.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-738,2400" />
+      <AbsolutePoint location="-738,2460" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/administratorEdit.do,showEdit,page.adminEditAdmin,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="942,1138" />
+      <AbsolutePoint location="942,1245" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="start;6,null,/init.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-629,215" />
+      <AbsolutePoint location="-510,215" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/appraisalClassList.do,showList,page.appraisalClassManager,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1849" />
+      <AbsolutePoint location="-628,1849" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/classSend.do,showSendSuccess,page.appraisalClassSendClassSuccess,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="140,2025" />
+      <AbsolutePoint location="315,2025" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/subjectEdit.do,showEdit,page.appraisalEditSubject,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1170" />
+      <AbsolutePoint location="-641,1170" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/classEdit.do,showAdd,page.appraisalClassAddClass,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,2040" />
+      <AbsolutePoint location="-626,2040" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="doLogout;6,null,/logOut.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-629,65" />
+      <AbsolutePoint location="-510,65" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/subjectList.do,showList,page.appraisalSubjectManager,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1009" />
+      <AbsolutePoint location="-617,1009" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logOut.do,logoutOk,/init.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-411,115" />
+      <AbsolutePoint location="-411,195" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.statistics,null,/statisticSelection.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="556,1629" />
+      <AbsolutePoint location="675,1629" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userEdit.do,showList,/userList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-359,1395" />
+      <AbsolutePoint location="-359,1348" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/checkAdminLogon.do,logonFailed,page.adminlogonFailure,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-16,118" />
+      <AbsolutePoint location="-16,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/prepareAppraisalList.do,showList,page.userAppraisalList,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-255,2969" />
+      <AbsolutePoint location="-366,2969" />
+      <AbsolutePoint location="-366,3030" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userLogon.do,prepareList,/prepareAppraisalList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-139,2848" />
+      <AbsolutePoint location="-139,2925" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="startUser;6,null,/openUserLogon.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-396,2400" />
+      <AbsolutePoint location="-396,2595" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/classSend.do,showSend,page.appraisalClassSendClass,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="90,1965" />
+      <AbsolutePoint location="90,1924" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openUserLogon.do,showLogon,page.userLogon,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-314,2595" />
+      <AbsolutePoint location="-314,2439" />
+      <AbsolutePoint location="135,2439" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/classSend.do,showSendFailure,page.appraisalClassSendClassFailure,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="140,1984" />
+      <AbsolutePoint location="315,1984" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userList.do,showList,page.appraisalUserManager,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1294" />
+      <AbsolutePoint location="-631,1294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/classSend.do,showList,/appraisalClassList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-15,1965" />
+      <AbsolutePoint location="-15,1889" />
+      <AbsolutePoint location="-239,1889" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.adminlogon,null,/checkAdminLogon.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-124,210" />
+      <AbsolutePoint location="-124,118" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/init.do,initOk,page.adminlogon,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-313,239" />
+      <AbsolutePoint location="-180,239" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/adminList.do,showList,page.adminmanager,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="675,1141" />
+      <AbsolutePoint location="675,1245" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openStatistics.do,showStatistics,page.statistics,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="480,1528" />
+      <AbsolutePoint location="480,1605" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logOutUser.do,userLogoutOk,/openUserLogon.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-557,2499" />
+      <AbsolutePoint location="-426,2499" />
+      <AbsolutePoint location="-426,2595" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changePassword.do,changePasswordFailed,page.changePasswordFailure,1" routingType="1">
+    <Bendpoints>
+      <Point rDim1="91,29" rDim2="16,-175" />
+      <Point rDim1="135,120" rDim2="60,-84" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/subjectEdit.do,showList,/subjectList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-359,1110" />
+      <AbsolutePoint location="-359,1063" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userEdit.do,showEdit,page.appraisalEditUser,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1455" />
+      <AbsolutePoint location="-655,1455" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changePassword.do,success,page.changePasswordSuccess,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="270,121" />
+      <AbsolutePoint location="270,165" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/statisticSelection.do,openStatistics,/openStatistics.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="795,1590" />
+      <AbsolutePoint location="795,1484" />
+      <AbsolutePoint location="556,1484" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.userLogon,null,/userLogon.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="188,2464" />
+      <AbsolutePoint location="188,2804" />
+      <AbsolutePoint location="37,2804" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/classEdit.do,showEdit,page.appraisalClassEditClass,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1984" />
+      <AbsolutePoint location="-627,1984" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userPrepareAppraisal.do,showAppraisal,page.userAppraisal,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-210,3194" />
+      <AbsolutePoint location="-60,3194" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/administratorEdit.do,showAdd,page.adminAddAdmin,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1050,1138" />
+      <AbsolutePoint location="1050,1245" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userLogon.do,invalidLogin,page.userNoValidLogin,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-79,2760" />
+      <AbsolutePoint location="-79,2674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.userAppraisal,null,/userSaveAppraisal.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="62,3189" />
+      <AbsolutePoint location="165,3189" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/administratorEdit.do,showList,/adminList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="870,1094" />
+      <AbsolutePoint location="751,1094" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openChangePassword.do,toChangePassword,page.changepassword,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="510,345" />
+      <AbsolutePoint location="510,199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/openAdminMainMenu.do,openAdminMain,page.adminmain,1" routingType="1">
+    <Bendpoints>
+      <Point rDim1="233,16" rDim2="-8,-279" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.settings,null,/settingsManager.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="630,814" />
+      <AbsolutePoint location="630,885" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/subjectEdit.do,showAdd,page.appraisalAddSubject,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-480,1129" />
+      <AbsolutePoint location="-640,1129" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.changepassword,null,/changePassword.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="585,150" />
+      <AbsolutePoint location="585,74" />
+      <AbsolutePoint location="346,74" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/appraisalCoreBasicEdit.do,showList,/appraisalCoreBasicList.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-359,1650" />
+      <AbsolutePoint location="-359,1603" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.adminmain,null,/adminList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="308,709" />
+      <AbsolutePoint location="308,1080" />
+      <AbsolutePoint location="600,1080" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.adminmain,null,/openStatistics.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="278,709" />
+      <AbsolutePoint location="278,1504" />
+      <AbsolutePoint location="405,1504" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.userAppraisalSaveFailure,null,/prepareAppraisalList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,2959" />
+      <AbsolutePoint location="24,2959" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalClassSendClassSuccess,null,/appraisalClassList.do,0" routingType="1">
+    <Bendpoints>
+      <Point rDim1="149,6" rDim2="930,181" />
+      <Point rDim1="149,-189" rDim2="930,-14" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalCore,null,/appraisalClassList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="121,1579" />
+      <AbsolutePoint location="121,1829" />
+      <AbsolutePoint location="-239,1829" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.userAppraisalSaveSuccess,null,/prepareAppraisalList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="135,2874" />
+      <AbsolutePoint location="-109,2874" />
+      <AbsolutePoint location="-109,2925" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.userNoValidLogin,null,/openUserLogon.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-120,2649" />
+      <AbsolutePoint location="-237,2649" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalmain,null,/textElementList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-150,690" />
+      <AbsolutePoint location="-223,690" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalmain,null,/openAppraisalManagerCore.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-45,709" />
+      <AbsolutePoint location="-45,1424" />
+      <AbsolutePoint location="0,1424" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.adminmain,null,/openChangePassword.do,0" routingType="1">
+    <Bendpoints />
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalmain,null,/openAdminMainMenu.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-89,660" />
+      <AbsolutePoint location="-89,433" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.noAdminPermission,null,/openAdminMainMenu.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-287,360" />
+      <AbsolutePoint location="-135,360" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.changePasswordFailure,null,/openAdminMainMenu.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="360,304" />
+      <AbsolutePoint location="360,389" />
+      <AbsolutePoint location="209,389" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalClassSendClassFailure,null,/appraisalClassList.do,0" routingType="1">
+    <Bendpoints>
+      <Point rDim1="2,-114" rDim2="780,1" />
+      <Point rDim1="-553,-114" rDim2="225,1" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalCore,null,/appraisalCoreBasicList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="60,1554" />
+      <AbsolutePoint location="-239,1554" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.adminmain,null,/openAppraisalManager.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="225,684" />
+      <AbsolutePoint location="113,684" />
+      <AbsolutePoint location="113,586" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.adminlogonFailure,null,/init.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-60,298" />
+      <AbsolutePoint location="-411,298" />
+      <AbsolutePoint location="-411,283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.adminmain,null,/openSettings.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="332,684" />
+      <AbsolutePoint location="420,684" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.userNoAppraisals,null,/openUserLogon.do,0" routingType="1">
+    <Bendpoints>
+      <Point rDim1="-145,21" rDim2="21,-224" />
+    </Bendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalmain,null,/subjectList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-105,709" />
+      <AbsolutePoint location="-105,1019" />
+      <AbsolutePoint location="-239,1019" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.changePasswordSuccess,null,/openAdminMainMenu.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="194,214" />
+      <AbsolutePoint location="194,345" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="page.appraisalmain,null,/userList.do,0" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="-75,709" />
+      <AbsolutePoint location="-75,1324" />
+      <AbsolutePoint location="-239,1324" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

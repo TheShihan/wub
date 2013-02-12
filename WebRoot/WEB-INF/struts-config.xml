@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources>
+  </data-sources>
+  <form-beans>
+    <form-bean name="logonForm" type="com.wub.struts.form.LogonForm" />
+    <form-bean name="changePasswordForm" type="com.wub.struts.form.ChangePasswordForm" />
+    <form-bean name="adminListForm" type="com.wub.struts.form.AdminListForm" />
+    <form-bean name="administratorEditForm" type="com.wub.struts.form.AdministratorEditForm" />
+    <form-bean name="textElementListForm" type="com.wub.struts.form.TextElementListForm" />
+    <form-bean name="textElementEditForm" type="com.wub.struts.form.TextElementEditForm" />
+    <form-bean name="classElementListForm" type="com.wub.struts.form.ClassElementListForm" />
+    <form-bean name="subjectListForm" type="com.wub.struts.form.SubjectListForm" />
+    <form-bean name="subjectEditForm" type="com.wub.struts.form.SubjectEditForm" />
+    <form-bean name="userListForm" type="com.wub.struts.form.UserListForm" />
+    <form-bean name="userEditForm" type="com.wub.struts.form.UserEditForm" />
+    <form-bean name="appraisalCoreBasicListForm" type="com.wub.struts.form.AppraisalCoreBasicListForm" />
+    <form-bean name="appraisalCoreBasicEditForm" type="com.wub.struts.form.AppraisalCoreBasicEditForm" />
+    <form-bean name="appraisalConfigEditForm" type="com.wub.struts.form.AppraisalConfigEditForm" />
+    <form-bean name="appraisalClassForm" type="com.wub.struts.form.AppraisalClassForm" />
+    <form-bean name="appraisalClassListForm" type="com.wub.struts.form.AppraisalClassListForm" />
+    <form-bean name="studentForm" type="com.wub.struts.form.StudentForm" />
+    <form-bean name="settingListForm" type="com.wub.struts.form.SettingListForm" />
+    <form-bean name="classSendForm" type="com.wub.struts.form.ClassSendForm" />
+    <form-bean name="classSendListForm" type="com.wub.struts.form.ClassSendListForm" />
+    <form-bean name="userLogonForm" type="com.wub.struts.form.UserLogonForm" />
+    <form-bean name="userAppraisalListForm" type="com.wub.struts.form.UserAppraisalListForm" />
+    <form-bean name="userAppraisalInfoForm" type="com.wub.struts.form.UserAppraisalInfoForm" />
+    <form-bean name="appraisalForm" type="com.wub.struts.form.AppraisalForm" />
+    <form-bean name="appraisalVoteElementForm" type="com.wub.struts.form.AppraisalVoteElementForm" />
+    <form-bean name="statisticSelectionForm" type="com.wub.struts.form.StatisticSelectionForm" />
+    <form-bean name="appraisalStatisticForm" type="com.wub.struts.form.AppraisalStatisticForm" />
+    <form-bean name="appraisalStatisicVoteElementForm" type="com.wub.struts.form.AppraisalStatisicVoteElementForm" />
+    <form-bean name="appraisalStatisticCommentElementForm" type="com.wub.struts.form.AppraisalStatisticCommentElementForm" />
+  </form-beans>
+  <global-exceptions>
+  </global-exceptions>
+  <global-forwards>
+    <forward
+      name="start"
+      path="/init.do"
+      redirect="true" />
+    <forward name="doLogout" path="/logOut.do" />
+    <forward
+      name="startUser"
+      path="/openUserLogon.do"
+      redirect="true" />
+    <forward name="doUserLogout" path="/logOutUser.do" />
+    <forward name="adminPermissionMissing" path="page.noAdminPermission" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </global-forwards>
+  <action-mappings>
+    <action path="/init" type="com.wub.struts.action.InitAction">
+      <forward
+      name="initOk"
+      path="page.adminlogon"
+      redirect="true" />
+      <forward
+        name="relogin"
+        path="/checkAdminLogon.do"
+        redirect="true" />
+    </action>
+    <action
+      attribute="logonForm"
+      input="page.adminlogon"
+      name="logonForm"
+      path="/checkAdminLogon"
+      scope="request"
+      type="com.wub.struts.action.CheckAdminLogonAction">
+      
+      <forward
+      name="logonFailed"
+      path="page.adminlogonFailure"
+      redirect="true" />
+      <forward name="success" path="/openAdminMainMenu.do" />
+      
+      
+    </action>
+    <action path="/logOut" type="com.wub.struts.action.LogOutAction">
+      <forward
+        name="logoutOk"
+        path="/init.do"
+        redirect="true" />
+    </action>
+    <action
+      attribute="changePasswordForm"
+      input="page.changepassword"
+      name="changePasswordForm"
+      path="/changePassword"
+      scope="request"
+      type="com.wub.struts.action.ChangePasswordAction" >
+      <forward
+      name="success"
+      path="page.changePasswordSuccess"
+      redirect="true" />
+      <forward
+      name="changePasswordFailed"
+      path="page.changePasswordFailure"
+      redirect="true" />
+      
+      
+    </action>
+    <action path="/openChangePassword" type="com.wub.struts.action.OpenChangePasswordAction">
+      <forward name="toChangePassword" path="page.changepassword" />
+      
+    </action>
+    
+    
+
+    
+    <action path="/openStatistics" type="com.wub.struts.action.OpenStatisticsAction">
+      <forward name="showStatistics" path="page.statistics" />
+    </action>
+    <action path="/openAppraisalManager" type="com.wub.struts.action.OpenAppraisalManagerAction">
+      <forward name="toAppraisalMain" path="page.appraisalmain" />
+    </action>
+    <action
+      attribute="adminListForm"
+      name="adminListForm"
+      path="/adminList"
+      scope="request"
+      type="com.wub.struts.action.AdminListAction">
+      <forward name="showList" path="page.adminmanager" />
+    </action>
+    <action
+      attribute="administratorEditForm"
+      name="administratorEditForm"
+      parameter="do"
+      path="/administratorEdit"
+      scope="request"
+      type="com.wub.struts.action.AdministratorEditAction">
+      <forward name="showEdit" path="page.adminEditAdmin" />
+      <forward name="showAdd" path="page.adminAddAdmin" />
+      <forward
+        name="showList"
+        path="/adminList.do"
+        redirect="true" />
+    </action>
+    <action path="/openAdminMainMenu" type="com.wub.struts.action.OpenAdminMainMenuAction">
+      <forward name="openAdminMain" path="page.adminmain" />
+      
+    </action>
+    <action
+      attribute="textElementListForm"
+      name="textElementListForm"
+      path="/textElementList"
+      scope="request"
+      type="com.wub.struts.action.TextElementListAction">
+      <forward name="showList" path="page.appraisalTextElementManager" />
+    </action>
+    <action
+      attribute="textElementEditForm"
+      name="textElementEditForm"
+      parameter="do"
+      path="/textElementEdit"
+      scope="request"
+      type="com.wub.struts.action.TextElementEditAction">
+      <forward name="showEdit" path="page.appraisalEditTextElement" />
+      <forward name="showAdd" path="page.appraisalAddTextElement" />
+      <forward name="showList" path="/textElementList.do" />
+    </action>
+    
+    <action
+      attribute="subjectListForm"
+      name="subjectListForm"
+      path="/subjectList"
+      scope="request"
+      type="com.wub.struts.action.SubjectListAction">
+      <forward name="showList" path="page.appraisalSubjectManager" />
+    </action>
+    <action
+      attribute="subjectEditForm"
+      name="subjectEditForm"
+      parameter="do"
+      path="/subjectEdit"
+      scope="request"
+      type="com.wub.struts.action.SubjectEditAction">
+      <forward name="showEdit" path="page.appraisalEditSubject" />
+      <forward name="showAdd" path="page.appraisalAddSubject" />
+      <forward name="showList" path="/subjectList.do" />
+    </action>
+    <action
+      attribute="userListForm"
+      name="userListForm"
+      path="/userList"
+      scope="request"
+      type="com.wub.struts.action.UserListAction">
+      <forward name="showList" path="page.appraisalUserManager" />
+    </action>
+    <action
+      attribute="userEditForm"
+      name="userEditForm"
+      parameter="do"
+      path="/userEdit"
+      scope="request"
+      type="com.wub.struts.action.UserEditAction" >
+      <forward name="showList" path="/userList.do" />
+      <forward name="showAdd" path="page.appraisalAddUser" />
+      <forward name="showEdit" path="page.appraisalEditUser" />
+    </action>
+    <action path="/openAppraisalManagerCore" type="com.wub.struts.action.OpenAppraisalManagerCoreAction">
+      <forward name="toAppraisalCore" path="page.appraisalCore" />
+    </action>
+    <action
+      attribute="appraisalCoreBasicListForm"
+      name="appraisalCoreBasicListForm"
+      path="/appraisalCoreBasicList"
+      scope="request"
+      type="com.wub.struts.action.AppraisalCoreBasicListAction">
+      <forward name="showList" path="page.appraisalCoreBasicManager" />
+    </action>
+    <action
+      attribute="appraisalCoreBasicEditForm"
+      name="appraisalCoreBasicEditForm"
+      parameter="do"
+      path="/appraisalCoreBasicEdit"
+      scope="request"
+      type="com.wub.struts.action.AppraisalCoreBasicEditFormAction">
+      <forward name="showEdit" path="page.appraisalCoreEditBasic" />
+      <forward name="showAdd" path="page.appraisalCoreAddBasic" />
+      <forward name="showList" path="/appraisalCoreBasicList.do" />
+    </action>
+    <action
+      attribute="appraisalClassListForm"
+      name="appraisalClassListForm"
+      path="/appraisalClassList"
+      scope="request"
+      type="com.wub.struts.action.AppraisalClassListAction">
+      <forward name="showList" path="page.appraisalClassManager" />
+      
+    </action>
+    <action
+      attribute="appraisalClassForm"
+      name="appraisalClassForm"
+      parameter="do"
+      path="/classEdit"
+      scope="request"
+      type="com.wub.struts.action.ClassEditAction">
+      
+      <forward name="showEdit" path="page.appraisalClassEditClass" />
+      <forward name="showAdd" path="page.appraisalClassAddClass" />
+      <forward name="showList" path="/appraisalClassList.do" />
+    </action>
+    <action
+      attribute="settingListForm"
+      input="page.settings"
+      name="settingListForm"
+      path="/settingsManager"
+      scope="request"
+      type="com.wub.struts.action.SettingsManagerAction">
+      <forward name="refresh" path="/openSettings.do" />
+    </action>
+
+    <action
+      path="/openSettings"
+      scope="request"
+      type="com.wub.struts.action.OpenSettingsAction">
+      <forward name="toSettings" path="page.settings" />
+    </action>
+    <action
+      attribute="classSendListForm"
+      name="classSendListForm"
+      parameter="do"
+      path="/classSend"
+      scope="request"
+      type="com.wub.struts.action.ClassSendAction">
+      <forward name="showSend" path="page.appraisalClassSendClass" />
+      <forward name="showSendSuccess" path="page.appraisalClassSendClassSuccess" />
+      <forward name="showList" path="/appraisalClassList.do" />
+      <forward name="showSendFailure" path="page.appraisalClassSendClassFailure" />
+    </action>
+    <action
+      attribute="userLogonForm"
+      input="page.userLogon"
+      name="userLogonForm"
+      path="/userLogon"
+      scope="request"
+      type="com.wub.struts.action.UserLogonAction">
+      <forward name="invalidLogin" path="page.userNoValidLogin" />
+      
+      <forward name="prepareList" path="/prepareAppraisalList.do" />
+      
+    </action>
+    <action
+      path="/openUserLogon"
+      scope="request"
+      type="com.wub.struts.action.OpenUserLogonAction">
+      <forward name="showLogon" path="page.userLogon" />
+      <forward name="relogin" path="/userLogon.do" />
+    </action>
+    <action
+      attribute="userAppraisalInfoForm"
+      input="page.userAppraisalList"
+      name="userAppraisalInfoForm"
+      path="/userPrepareAppraisal"
+      scope="request"
+      type="com.wub.struts.action.UserPrepareAppraisalAction">
+      <forward name="showAppraisal" path="page.userAppraisal" />
+    </action>
+    <action path="/logOutUser" type="com.wub.struts.action.LogOutUserAction" >
+      <forward name="userLogoutOk" path="/openUserLogon.do" />
+    </action>
+    <action
+      attribute="appraisalForm"
+      input="page.userAppraisal"
+      name="appraisalForm"
+      path="/userSaveAppraisal"
+      type="com.wub.struts.action.UserSaveAppraisalAction">
+      <forward name="showFailure" path="page.userAppraisalSaveFailure" />
+      <forward name="showSuccess" path="page.userAppraisalSaveSuccess" />
+    </action>
+    <action
+      path="/prepareAppraisalList"
+      type="com.wub.struts.action.PrepareAppraisalListAction"
+      validate="false" >
+      <forward name="showList" path="page.userAppraisalList" />
+      <forward name="noAppraisals" path="page.userNoAppraisals" />
+    </action>
+    <action
+      attribute="statisticSelectionForm"
+      input="page.statistics"
+      name="statisticSelectionForm"
+      path="/statisticSelection"
+      scope="request"
+      type="com.wub.struts.action.StatisticSelectionAction">
+      <forward name="showStatisticPerClass" path="page.statisticsClass" />
+      <forward name="openStatistics" path="/openStatistics.do" />
+    </action>
+    
+    
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+  </action-mappings>
+  <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+  <message-resources parameter="com.wub.struts.ApplicationResources" />
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>
+    <set-property property="moduleAware" value="true"/>
+  </plug-in>
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/WEB-INF/validator-rules.xml"/>
+  </plug-in>
+</struts-config>

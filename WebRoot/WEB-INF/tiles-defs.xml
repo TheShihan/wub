@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     Tiles definition file, for page layout
+-->
+
+<tiles-definitions>
+
+    <definition name="base.definition" path="/SiteLayout.jsp">
+    	<put name="header" value="/header.jsp" />
+    	<put name="menu" value="" />
+    	<put name="body" value="" />
+    	<put name="footer" value="/footer.jsp" />
+    </definition>
+    
+    <definition name="page.adminlogon" extends="base.definition">
+    	<put name="body" value="/adminlogon.jsp" />
+    </definition>
+    
+    <definition name="base.infopage" extends="base.definition">
+    	<put name="menu" value="" />
+    </definition>
+    
+    <definition name="page.adminlogonFailure" extends="base.infopage">
+    	<put name="body" value="/adminLogonFailure.jsp" />
+    </definition> 
+    
+    <definition name="page.changePasswordSuccess" extends="base.infopage">
+    	<put name="body" value="/adminChangePasswordSuccess.jsp" />
+    </definition>
+    
+    <definition name="page.changePasswordFailure" extends="base.infopage">
+    	<put name="body" value="/adminChangePasswordFailure.jsp" />
+    </definition>
+    
+    <definition name="page.adminmain" extends="base.definition">
+    	<put name="menu" value="/adminmenu.jsp" />
+    	<put name="body" value="/adminmainbody.jsp" />
+    </definition>
+    
+    <!-- Statistik Start -->
+    
+   	<definition name="page.statistics" extends="page.adminmain">
+    	<put name="body" value="/adminStatistics.jsp"/>
+    </definition>
+    
+    <definition name="page.statisticsClass" extends="page.adminmain">
+    	<put name="body" value="/adminStatisticsClass.jsp"/>
+    </definition>
+    
+    <!-- Statistik Ende -->
+    
+    <!-- Admin Verwaltung start -->
+    
+ 	<definition name="page.adminmanager" extends="page.adminmain">
+    	<put name="body" value="/adminManager.jsp"/>
+    </definition>
+    
+   	<definition name="page.adminAddAdmin" extends="page.adminmain">
+    	<put name="body" value="/adminAdd.jsp"/>
+    </definition>
+    
+   	<definition name="page.adminEditAdmin" extends="page.adminmain">
+    	<put name="body" value="/adminEdit.jsp"/>
+    </definition>
+    
+    <!-- Admin Verwaltung Ende -->
+    
+    <definition name="page.changepassword" extends="page.adminmain">
+    	<put name="body" value="/adminChangePassword.jsp"/>
+    </definition>
+    
+    <definition name="page.noAdminPermission" extends="page.adminmain">
+    	<put name="body" value="/adminNoPermission.jsp"/>
+    </definition>
+    
+    <definition name="page.settings" extends="page.adminmain">
+    	<put name="body" value="/adminSettings.jsp"/>
+    </definition>
+    
+    <definition name="page.appraisalmain" extends="base.definition">
+    	<put name="menu" value="/adminAppraisalMenu.jsp" />
+    	<put name="body" value="/adminAppraisalManagerMainBody.jsp" />
+    </definition>
+    
+    <definition name="page.appraisalCore" extends="base.definition">
+    	<put name="menu" value="/adminAppraisalCoreMenu.jsp" />
+    	<put name="body" value="/adminAppraisalCoreMainBody.jsp" />
+    </definition>
+    
+    <!-- Text Element Start -->
+    
+	<definition name="page.appraisalTextElementManager" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalTextElementManager.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalAddTextElement" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalAddTextElement.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalEditTextElement" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalEditTextElement.jsp" />
+    </definition>
+    
+    <!-- Text Element Ende -->
+    
+    <!-- Subject Manager Start -->
+    
+	<definition name="page.appraisalSubjectManager" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalSubjectManager.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalAddSubject" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalAddSubject.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalEditSubject" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalEditSubject.jsp" />
+    </definition>
+    
+    <!-- Subject Manager Ende -->
+    
+    <!-- User Manager Start -->
+    
+	<definition name="page.appraisalUserManager" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalUserManager.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalAddUser" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalAddUser.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalEditUser" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalEditUser.jsp" />
+    </definition>
+    
+    <!-- User Manager Ende -->
+    
+    <!-- appraisal core basic Start -->
+    
+	<definition name="page.appraisalCoreBasicManager" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalCoreBasicManager.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalCoreAddBasic" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalCoreAddBasic.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalCoreEditBasic" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalCoreEditBasic.jsp" />
+    </definition>
+    
+    <!-- appraisal core basic Ende -->
+    
+    <!-- appraisal class Start -->
+    
+	<definition name="page.appraisalClassManager" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalClassManager.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalClassAddClass" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalClassAddClass.jsp" />
+    </definition>
+    
+	<definition name="page.appraisalClassEditClass" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalClassEditClass.jsp" />
+    </definition>
+    
+    <definition name="page.appraisalClassSendClass" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalClassSendClass.jsp" />
+    </definition>
+    
+    <definition name="page.appraisalClassSendClassFailure" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalClassSendFailure.jsp" />
+    </definition>
+    
+    <definition name="page.appraisalClassSendClassSuccess" extends="page.appraisalCore">
+    	<put name="body" value="/adminAppraisalClassSendSuccess.jsp" />
+    </definition>
+        
+    
+    <!-- appraisal class Ende -->
+    
+    <definition name="page.appraisalManager" extends="page.appraisalmain">
+    	<put name="body" value="/adminAppraisalManager.jsp" />
+    </definition>
+    
+    <definition name="page.infofailure" extends="base.infopage">
+    	<put name="body" value="/infofailure.jsp" />
+    </definition>
+    
+    
+    <!-- ++++++++++++++++  USER AREA START  ++++++++++++++++ -->
+    
+    <definition name="page.userLogon" extends="base.definition">
+    	<put name="body" value="/userLogon.jsp" />
+    </definition>
+    
+    <definition name="page.userStandard" extends="base.definition">
+    	<put name="menu" value="/userMenu.jsp" />
+    </definition>
+    
+    <definition name="page.userNoValidLogin" extends="base.definition">
+    	<put name="body" value="/userNoValidLogin.jsp" />
+    </definition>
+    
+    <definition name="page.userNoAppraisals" extends="base.definition">
+    	<put name="body" value="/userNoAppraisals.jsp" />
+    </definition>
+    
+    <definition name="page.userAppraisalList" extends="page.userStandard">
+    	<put name="body" value="/userAppraisalList.jsp" />
+    </definition>
+    
+    <definition name="page.userAppraisal" extends="page.userStandard">
+    	<put name="body" value="/userAppraisal.jsp" />
+    </definition>
+    
+    <definition name="page.userAppraisalSaveSuccess" extends="page.userStandard">
+    	<put name="body" value="/userAppraisalSaveSuccess.jsp" />
+    </definition>
+    
+    <definition name="page.userAppraisalSaveFailure" extends="page.userStandard">
+    	<put name="body" value="/userAppraisalSaveFailure.jsp" />
+    </definition>
+
+
+ 	<!-- ++++++++++++++++  USER AREA ENDE  ++++++++++++++++ -->
+
+</tiles-definitions>

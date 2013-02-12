@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" 
+
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd"> 
+
+
+<taglib>
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>original tag</shortname>
+
+
+<tag>
+<name>nl2br</name>
+<tagclass>com.wub.customTag.Nl2br</tagclass>
+<bodycontent>JSP</bodycontent>
+<info>Custom Tag that converts native line breaks into HTML line breaks</info>
+</tag>
+</taglib>

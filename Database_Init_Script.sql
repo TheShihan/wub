@@ -127,7 +127,7 @@ INSERT INTO `wub`.`roles` (`role_id`,`name`,`usermanager`,`reportmanager`,`appra
  (3,'Berichtmanager',0,1,0),
  (4,'Beurteilungsmanager',0,0,1),
  (5,'Benutzer-/Berichtsmanager',1,1,0),
- (6,'Bernutzer-/Beurteilungsmanager',1,0,1),
+ (6,'Benutzer-/Beurteilungsmanager',1,0,1),
  (7,'Berichts-/Beurteilungsmanager',0,1,1),
  (8,'Keine Rechte',0,0,0);
 /*!40000 ALTER TABLE `wub`.`roles` ENABLE KEYS */;
